@@ -1,5 +1,5 @@
-import React from 'react'
-import { Popup, Menu, Icon } from 'semantic-ui-react';
+import React, { useEffect, useState } from 'react'
+import { Popup, Icon } from 'semantic-ui-react';
 import CartPopup from '../cartPopup/CartPopup';
 
 import './Header.scss';
@@ -7,11 +7,19 @@ import './Header.scss';
 
 const Header = ({ totalPrice, totalItems, items, removeFromCart }) => {
 
+        const [width, setWidth] = useState(window.innerWidth);
+        const [mobileClass, setMobileClass] = useState('header-container');
+
+        useResponse(setWidth, width, setMobileClass);
+
+
+
+
 
         return (
 
 
-                <div className='header-container'>
+                <div className={mobileClass} >
                         <div className='header-logo'>
                                 <div className='logo'>OHRA</div>
                         </div>
@@ -39,7 +47,7 @@ const Header = ({ totalPrice, totalItems, items, removeFromCart }) => {
                                 </div>
 
                         </div>
-                </div>
+                </div >
                 // <Menu size='massive' color={color} inverted widths={4}>
                 //         <Menu.Item
                 //                 name='O H R A'
@@ -69,4 +77,21 @@ const Header = ({ totalPrice, totalItems, items, removeFromCart }) => {
         )
 }
 
-export default Header
+export default Header;
+
+const useResponse = (setWidth, width, setMobileClass) => {
+        useEffect(() => {
+                const handleResize = () => setWidth(window.innerWidth);
+                window.addEventListener('resize', handleResize);
+        })
+        useEffect(() => {
+                const handleMobileCLass = (width) => {
+                        if (width < 1000) {
+                                return 'header-container-mob';
+                        } else {
+                                return 'header-container'
+                        }
+                }
+                setMobileClass(handleMobileCLass(width))
+        })
+}

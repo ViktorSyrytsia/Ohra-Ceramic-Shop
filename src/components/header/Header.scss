@@ -1,5 +1,15 @@
 .header-container {
-  height: 100px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 2px 2px 4px #e6e6e6, -2px -2px 4px #ffffff;
+  border: 1px solid rgb(235, 235, 235);
+}
+.header-container-mob {
+  flex-direction: column;
   margin: 20px auto;
   display: flex;
   align-items: center;
@@ -11,14 +21,15 @@
 }
 
 .header-logo {
+  margin: 30px 20px;
   color: burlywood;
   font-size: 66px;
-  margin-left: 20px;
   letter-spacing: 12px;
   cursor: default;
   flex-basis: 33.33%;
 }
 .header-menu {
+  margin: 30px 20px;
   flex-basis: 33.33%;
   display: flex;
   justify-content: space-between;
@@ -26,6 +37,7 @@
   font-weight: bold;
   text-transform: uppercase;
   &-item {
+    margin-right: 10px;
     flex-grow: 1;
     cursor: pointer;
     opacity: 0.5;
@@ -37,6 +49,7 @@
 }
 
 .header-cart {
+  margin: 30px 20px;
   display: flex;
   justify-content: flex-end;
   flex-basis: 33.33%;

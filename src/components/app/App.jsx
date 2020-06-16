@@ -45,7 +45,7 @@ export default App;
 
 
 
-const useResponse = (setWidth, width, setColumns) => {
+export const useResponse = (setWidth, width, setColumns) => {
         useEffect(() => {
                 const handleResize = () => setWidth(window.innerWidth);
                 window.addEventListener('resize', handleResize);
