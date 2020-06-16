@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../../containers/Header';
 import ItemCard from '../../containers/ItemCard';
 import FilterPanel from '../../containers/FilterPanel';
+import LoadingIndicator from '../loadingIndicator/LoadingIndicator';
 
 import axios from 'axios';
 
@@ -33,7 +34,7 @@ const App = ({ setItems, itemsList, isReady }) => {
                                 <FilterPanel />
                         </div>
                         <Card.Group itemsPerRow={columns}>
-                                {!isReady ? 'Loading...' : itemsList.map(item => (<ItemCard key={item.id} item={item} />))}
+                                {!isReady ? <LoadingIndicator /> : itemsList.map(item => (<ItemCard key={item.id} item={item} />))}
                         </Card.Group>
                 </Container>
 
