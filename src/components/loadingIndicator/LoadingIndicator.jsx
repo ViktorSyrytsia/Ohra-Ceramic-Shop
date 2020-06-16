@@ -1,6 +1,8 @@
 import React from 'react'
 import { Loader } from 'semantic-ui-react'
 
-const LoadingIndicator = () => <Loader size='massive' active inline='centered' />
+import './LoadingIndicator.scss';
+
+const LoadingIndicator = () => <div className='loader'><Loader size='massive' active inline='centered' /></div>
 
 export default LoadingIndicator
