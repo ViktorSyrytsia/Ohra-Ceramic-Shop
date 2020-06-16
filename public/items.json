@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1001,
+    "title": "Cup with face",
+    "author": "Ohra Ceramic",
+    "image": "https://i.imgur.com/q1Dvpqw.png",
+    "price": 350,
+    "rating": 4,
+    "desciption": ""
+  },
+  {
+    "id": 1002,
+    "title": "Plates with leafs",
+    "author": "Ohra Ceramic",
+    "image": "https://i.imgur.com/JwyrL6J.png",
+    "price": 450,
+    "rating": 5,
+    "desciption": ""
+  },
+  {
+    "id": 1003,
+    "title": "Elegant vase",
+    "author": "Ohra Ceramic",
+    "image": "https://i.imgur.com/MXYoWZs.png",
+    "price": 1350,
+    "rating": 3,
+    "desciption": ""
+  },
+  {
+    "id": 1004,
+    "title": "Mily-points cup",
+    "author": "Ohra Ceramic",
+    "image": "https://i.imgur.com/WLfLYMX.png",
+    "price": 50,
+    "rating": 4,
+    "desciption": ""
+  },
+  {
+    "id": 1005,
+    "title": "Three colored cups",
+    "author": "Ohra Ceramic",
+    "image": "https://i.imgur.com/0nXIhop.png",
+    "price": 250,
+    "rating": 2,
+    "desciption": ""
+  },
+  {
+    "id": 1006,
+    "title": "Colored soap dishes",
+    "author": "Ohra Ceramic",
+    "image": "https://i.imgur.com/hTE4wT1.png",
+    "price": 250,
+    "rating": 2,
+    "desciption": ""
+  },
+  {
+    "id": 1007,
+    "title": "Palm soap dish",
+    "author": "Ohra Ceramic",
+    "image": "https://i.imgur.com/ouZ33uK.png",
+    "price": 250,
+    "rating": 2,
+    "desciption": ""
+  },
+  {
+    "id": 1008,
+    "title": "Tean plates",
+    "author": "Ohra Ceramic",
+    "image": "https://i.imgur.com/hAXDJin.png",
+    "price": 250,
+    "rating": 2,
+    "desciption": ""
+  },
+  {
+    "id": 1009,
+    "title": "White brushes cup",
+    "author": "Ohra Ceramic",
+    "image": "https://i.imgur.com/3v27PTh.png",
+    "price": 250,
+    "rating": 2,
+    "desciption": ""
+  },
+  {
+    "id": 1010,
+    "title": "Brown circled plates",
+    "author": "Ohra Ceramic",
+    "image": "https://i.imgur.com/4sBkkAX.png",
+    "price": 250,
+    "rating": 2,
+    "desciption": ""
+  },
+  {
+    "id": 1011,
+    "title": "Half colored factured cup",
+    "author": "Ohra Ceramic",
+    "image": "https://i.imgur.com/Iqw7hYk.png",
+    "price": 250,
+    "rating": 2,
+    "desciption": ""
+  }
+]
