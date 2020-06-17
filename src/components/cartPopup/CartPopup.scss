@@ -1,0 +1,37 @@
+.cart-list {
+  text-align: left;
+  width: 400px;
+
+  &-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-image > img {
+      width: 50px;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    &-text {
+      flex-grow: 1;
+      font-size: 16px;
+      display: flex;
+    }
+
+    &-button {
+    }
+  }
+}
+
+.item-title {
+  font-weight: bold;
+  margin-left: 10px;
+  flex-basis: 50%;
+}
+
+.item-count {
+  flex-basis: 50%;
+}

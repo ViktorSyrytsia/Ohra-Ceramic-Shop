@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Popup, Icon } from 'semantic-ui-react';
+import { Popup } from 'semantic-ui-react';
 import CartPopup from '../cartPopup/CartPopup';
 
 import './Header.scss';
@@ -40,7 +40,7 @@ const Header = ({ totalPrice, totalItems, items, removeFromCart }) => {
 
                                                 }
                                                 content={
-                                                        <CartPopup items={items} removeFromCart={removeFromCart} />}
+                                                        <CartPopup items={items} totalPrice={totalPrice} removeFromCart={removeFromCart} />}
                                                 on='click'
                                                 hideOnScroll>
                                         </Popup>
