@@ -6,7 +6,8 @@
     "image": "https://i.imgur.com/q1Dvpqw.png",
     "price": 350,
     "rating": 4,
-    "desciption": ""
+    "desciption": "",
+    "count": 0
   },
   {
     "id": 1002,
@@ -15,7 +16,8 @@
     "image": "https://i.imgur.com/JwyrL6J.png",
     "price": 450,
     "rating": 5,
-    "desciption": ""
+    "desciption": "",
+    "count": 0
   },
   {
     "id": 1003,
@@ -24,7 +26,8 @@
     "image": "https://i.imgur.com/MXYoWZs.png",
     "price": 1350,
     "rating": 3,
-    "desciption": ""
+    "desciption": "",
+    "count": 0
   },
   {
     "id": 1004,
@@ -33,7 +36,8 @@
     "image": "https://i.imgur.com/WLfLYMX.png",
     "price": 50,
     "rating": 4,
-    "desciption": ""
+    "desciption": "",
+    "count": 0
   },
   {
     "id": 1005,
@@ -42,7 +46,8 @@
     "image": "https://i.imgur.com/0nXIhop.png",
     "price": 250,
     "rating": 2,
-    "desciption": ""
+    "desciption": "",
+    "count": 0
   },
   {
     "id": 1006,
@@ -51,7 +56,8 @@
     "image": "https://i.imgur.com/hTE4wT1.png",
     "price": 250,
     "rating": 2,
-    "desciption": ""
+    "desciption": "",
+    "count": 0
   },
   {
     "id": 1007,
@@ -60,7 +66,8 @@
     "image": "https://i.imgur.com/ouZ33uK.png",
     "price": 250,
     "rating": 2,
-    "desciption": ""
+    "desciption": "",
+    "count": 0
   },
   {
     "id": 1008,
@@ -69,7 +76,8 @@
     "image": "https://i.imgur.com/hAXDJin.png",
     "price": 250,
     "rating": 2,
-    "desciption": ""
+    "desciption": "",
+    "count": 0
   },
   {
     "id": 1009,
@@ -78,7 +86,8 @@
     "image": "https://i.imgur.com/3v27PTh.png",
     "price": 250,
     "rating": 2,
-    "desciption": ""
+    "desciption": "",
+    "count": 0
   },
   {
     "id": 1010,
@@ -87,7 +96,8 @@
     "image": "https://i.imgur.com/4sBkkAX.png",
     "price": 250,
     "rating": 2,
-    "desciption": ""
+    "desciption": "",
+    "count": 0
   },
   {
     "id": 1011,
@@ -96,6 +106,7 @@
     "image": "https://i.imgur.com/Iqw7hYk.png",
     "price": 250,
     "rating": 2,
-    "desciption": ""
+    "desciption": "",
+    "count": 0
   }
 ]

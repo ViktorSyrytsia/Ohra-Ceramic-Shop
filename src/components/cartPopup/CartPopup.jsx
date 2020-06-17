@@ -6,6 +6,8 @@ import './CartPopup.scss';
 
 const CartComponent = ({ items, removeFromCart, totalPrice }) => {
 
+
+
         const tip = 'Press "Add to cart" button, to add some items here...';
 
         return (
@@ -16,7 +18,7 @@ const CartComponent = ({ items, removeFromCart, totalPrice }) => {
                                                 <img src={item.image} />
                                         </div>
                                         <div className='cart-list-item-text'>
-                                                <span className='item-title'>{item.title}</span><span className='item-count'>Items: 0</span></div>
+                                                <span className='item-title'>{item.title}</span><span className='item-count'>{item.count}</span></div>
 
                                         <div className='cart-list-item-button'>
                                                 <Button basic color='orange' onClick={() => removeFromCart(item.id)} color='orange'>Remove</Button>

@@ -8,7 +8,7 @@ import Header from '../components/header/Header';
 const mapStateToProps = ({ cart }) => ({
         totalPrice: cart.items.reduce((total, item) => total + item.price, 0),
         totalItems: cart.items.length,
-        items: uniqBy(cart.items, item => item.id),
+        items: cart.items
 })
 
 export default connect(mapStateToProps, cartActions)(Header)

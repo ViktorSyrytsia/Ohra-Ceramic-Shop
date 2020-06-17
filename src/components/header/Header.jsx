@@ -34,8 +34,8 @@ const Header = ({ totalPrice, totalItems, items, removeFromCart }) => {
                                                 content='Add users to your feed'
                                                 trigger={
                                                         <div className='cart-icons'>
-                                                                <i aria-hidden="true" class="cart bordered icon"></i>
-                                                                <i aria-hidden="true" class="bordered icon">{totalItems}</i>
+                                                                <i aria-hidden="true" className="cart bordered icon"></i>
+                                                                <i aria-hidden="true" className="bordered icon">{totalItems}</i>
                                                         </div>
 
                                                 }
