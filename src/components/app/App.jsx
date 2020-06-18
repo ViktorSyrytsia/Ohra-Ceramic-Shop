@@ -3,6 +3,9 @@ import Header from '../../containers/Header';
 import ItemCard from '../../containers/ItemCard';
 import FilterPanel from '../../containers/FilterPanel';
 import LoadingIndicator from '../loadingIndicator/LoadingIndicator';
+import Workshop from '../../pages/workshop/Workshop';
+
+import { Switch, Route } from 'react-router-dom';
 
 import axios from 'axios';
 
@@ -29,13 +32,25 @@ const App = ({ setItems, itemsList, isReady }) => {
 
         return (
                 <Container>
+
                         <div className='header'>
                                 <Header />
-                                <FilterPanel />
                         </div>
-                        <Card.Group itemsPerRow={columns}>
-                                {!isReady ? <LoadingIndicator /> : itemsList.map(item => (<ItemCard key={item.id} item={item} />))}
-                        </Card.Group>
+                        <Switch>
+                                <Route exact path="/">
+                                        <FilterPanel />
+                                        <Card.Group itemsPerRow={columns}>
+                                                {!isReady ? <LoadingIndicator /> : itemsList.map(item => (<ItemCard key={item.id} item={item} />))}
+                                        </Card.Group>
+                                </Route>
+                                <Route exact path="/workshop">
+                                        <Workshop />
+                                </Route>
+                                <Route exact path="/about">
+                                        <div>about us</div>
+                                </Route>
+                        </Switch>
+
                 </Container>
 
         )

@@ -1,0 +1,28 @@
+.workshop-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: centers;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.workshop-image > img {
+  width: 414px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.workshop-text {
+  width: 414px;
+  margin-top: 20px;
+  font-size: 18px;
+  margin: 0 auto;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+  padding: 20px;
+  opacity: 0.8;
+}
+.workshop-title {
+  font-size: 36px;
+  opacity: 0.9;
+}

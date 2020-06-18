@@ -1,5 +1,7 @@
 import React from 'react';
-import { Input, Menu } from 'semantic-ui-react'
+import { Input, Menu } from 'semantic-ui-react';
+
+import './FilterPanel.scss'
 
 const FilterPanel = ({ setFilterBy, filterBy, searchQuery, setSearchQuery }) => {
 
@@ -8,7 +10,7 @@ const FilterPanel = ({ setFilterBy, filterBy, searchQuery, setSearchQuery }) => 
         }
 
         return (
-                <div>
+                <div className='filter-panel'>
                         <Menu stackable>
                                 <Menu.Item
                                         name='All'

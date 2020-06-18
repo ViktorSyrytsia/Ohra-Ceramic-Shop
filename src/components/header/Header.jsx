@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Popup } from 'semantic-ui-react';
+import { Link, Router } from 'react-router-dom';
 import CartPopup from '../cartPopup/CartPopup';
 
 import './Header.scss';
@@ -24,9 +25,9 @@ const Header = ({ totalPrice, totalItems, items, removeFromCart }) => {
                                 <div className='logo'>OHRA</div>
                         </div>
                         <div className='header-menu'>
-                                <div className='header-menu-item'>Main</div>
-                                <div className='header-menu-item'>Workshop</div>
-                                <div className='header-menu-item'>About us</div>
+                                <div className='header-menu-item'><Link to="/">Main</Link></div>
+                                <div className='header-menu-item'><Link to="/workshop">Workshop</Link></div>
+                                <div className='header-menu-item'><Link to="/about">About us</Link></div>
                         </div>
                         <div className='header-cart'>
                                 <div className='header-cart-container'>
