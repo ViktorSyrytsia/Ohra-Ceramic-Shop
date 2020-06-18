@@ -19,12 +19,12 @@ const CartComponent = ({ items, removeFromCart, totalPrice }) => {
                                         </div>
                                         <div className='cart-list-item-text'>
                                                 <span className='item-title'>{item.title}</span>
-                                                <span className='item-count'>{item.count}</span>
-                                                <span className='item-price'>{item.count * item.price}</span>
+                                                <span className='item-count'><i aria-hidden="true" className="bordered icon">{item.count}</i></span>
+                                                <span className='item-price'>{item.count * item.price}$</span>
                                         </div>
 
                                         <div className='cart-list-item-button'>
-                                                <Button basic color='orange' onClick={() => removeFromCart(item.id)} color='orange'>Remove</Button>
+                                                <Button size='mini' basic color='orange' onClick={() => removeFromCart(item.id)} color='orange'>Remove</Button>
                                         </div>
                                 </div>
                         )) : tip
