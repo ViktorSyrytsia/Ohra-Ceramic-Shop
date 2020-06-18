@@ -1,14 +1,12 @@
 .cart-list {
   text-align: left;
-  width: 350px;
+  width: 330px;
 
   &-item {
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
     &-image > img {
       width: 50px;
       height: auto;
@@ -17,7 +15,7 @@
 
     &-text {
       flex-grow: 1;
-      font-size: 16px;
+      font-size: 12px;
       display: flex;
     }
 
@@ -36,5 +34,5 @@
   flex-basis: 50%;
 }
 .item-price {
-  margin-right: 20px;
+  margin-right: 15px;
 }
