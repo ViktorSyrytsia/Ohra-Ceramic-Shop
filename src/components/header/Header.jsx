@@ -42,7 +42,7 @@ const Header = ({ totalPrice, totalItems, items, removeFromCart }) => {
                                                 content={
                                                         <CartPopup items={items} totalPrice={totalPrice} removeFromCart={removeFromCart} />}
                                                 on='click'
-                                                hideOnScroll>
+                                        >
                                         </Popup>
                                 </div>
 
