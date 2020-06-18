@@ -18,7 +18,10 @@ const CartComponent = ({ items, removeFromCart, totalPrice }) => {
                                                 <img src={item.image} />
                                         </div>
                                         <div className='cart-list-item-text'>
-                                                <span className='item-title'>{item.title}</span><span className='item-count'>{item.count}</span></div>
+                                                <span className='item-title'>{item.title}</span>
+                                                <span className='item-count'>{item.count}</span>
+                                                <span className='item-price'>{item.count * item.price}</span>
+                                        </div>
 
                                         <div className='cart-list-item-button'>
                                                 <Button basic color='orange' onClick={() => removeFromCart(item.id)} color='orange'>Remove</Button>
