@@ -4,6 +4,7 @@ import ItemCard from '../../containers/ItemCard';
 import FilterPanel from '../../containers/FilterPanel';
 import LoadingIndicator from '../loadingIndicator/LoadingIndicator';
 import Workshop from '../../pages/workshop/Workshop';
+import AboutUs from '../../pages/aboutUs/AboutUs';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -47,7 +48,7 @@ const App = ({ setItems, itemsList, isReady }) => {
                                         <Workshop />
                                 </Route>
                                 <Route exact path="/about">
-                                        <div>about us</div>
+                                        <AboutUs />
                                 </Route>
                         </Switch>
 

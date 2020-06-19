@@ -1,0 +1,24 @@
+.aboutUs {
+  text-align: center;
+  padding-bottom: 50px;
+  &-title {
+    font-size: 36px;
+    opacity: 0.9;
+  }
+  &-img {
+    width: 370px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  &-text {
+    width: 370px;
+    margin-top: 20px;
+    font-size: 18px;
+    margin: 0 auto;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 10px;
+    padding: 20px;
+    opacity: 0.8;
+  }
+}

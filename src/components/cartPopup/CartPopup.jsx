@@ -24,7 +24,7 @@ const CartComponent = ({ items, removeFromCart, totalPrice }) => {
                                         </div>
 
                                         <div className='cart-list-item-button'>
-                                                <Button size='mini' basic color='orange' onClick={() => removeFromCart(item.id)} color='orange'>Remove</Button>
+                                                <Button size='mini' fluid basic color='orange' onClick={() => removeFromCart(item.id)} color='orange'>Remove</Button>
                                         </div>
                                 </div>
                         )) : tip
