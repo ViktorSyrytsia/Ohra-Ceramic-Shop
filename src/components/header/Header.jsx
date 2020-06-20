@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import CartPopup from '../cartPopup/CartPopup';
 
-import { Modal, Icon } from 'semantic-ui-react'
+import { Modal, Icon, Container } from 'semantic-ui-react'
 
 import './Header.scss';
 
@@ -21,29 +21,31 @@ const AppHeader = ({ totalPrice, totalItems, items, removeFromCart }) => {
 
         return (
 
-
-                <div className={mobileClass} >
-                        <div className='header-logo'>
-                                <div className='logo'>OHRA</div>
-                        </div>
-                        <div className='header-menu'>
-                                <div className='header-menu-item'><Link to="/">Main</Link></div>
-                                <div className='header-menu-item'><Link to="/workshop">Workshop</Link></div>
-                                <div className='header-menu-item'><Link to="/about">About</Link></div>
-                                <div className='header-menu-item'>
-                                        <Modal trigger={<Link><Icon size='small' bordered inverted color='blue' name='tag' />Cart</Link>}>
-                                                <Modal.Header>Your cart</Modal.Header>
-                                                <Modal.Content>
-                                                        <CartPopup items={items} removeFromCart={removeFromCart} totalPrice={totalPrice} />
-                                                </Modal.Content>
-                                        </Modal>
+                <Container>
+                        <div className={mobileClass} >
+                                <div className='header-logo'>
+                                        <div className='logo'>OHRA</div>
                                 </div>
-                        </div>
+                                <div className='header-menu'>
+                                        <div className='header-menu-item'><Link to="/">Main</Link></div>
+                                        <div className='header-menu-item'><Link to="/workshop">Workshop</Link></div>
+                                        <div className='header-menu-item'><Link to="/about">About</Link></div>
+                                        <div className='header-menu-item'>
+                                                <Modal trigger={<Link><Icon size='small' bordered color='blue' name='cart' /></Link>}>
+                                                        <Modal.Header>Your cart</Modal.Header>
+                                                        <Modal.Content>
+                                                                <CartPopup items={items} removeFromCart={removeFromCart} totalPrice={totalPrice} />
+                                                        </Modal.Content>
+                                                </Modal>
+                                        </div>
+                                </div>
 
 
 
 
-                </div >
+                        </div >
+
+                </Container>
 
         )
 }
