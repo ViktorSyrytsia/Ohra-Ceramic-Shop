@@ -11,10 +11,10 @@ const ItemCard = ({ item, addToCart }) => {
         const ratingStars = (rating) => {
                 let starsArray = [];
                 for (let index = 0; index < rating; index++) {
-                        starsArray.push(<Icon color='yellow' name='star' />);
+                        starsArray.push(<Icon key={index + Math.floor(Math.random() * 1000)} color='yellow' name='star' />);
                 }
                 for (let index = rating; starsArray.length <= 5 - 1; index++) {
-                        starsArray.push(<Icon disabled color='yellow' name='star outline' />);
+                        starsArray.push(<Icon key={index + Math.floor(Math.random() * 1000)} disabled color='yellow' name='star outline' />);
                 }
                 return starsArray;
         }
@@ -25,7 +25,7 @@ const ItemCard = ({ item, addToCart }) => {
                 <div className='button-group'>
                         <div className='stars-group'> {stars} </div>
                         <Button.Group fluid>
-                                <Button className='buy-button' color='teal'>Buy now</Button>
+                                <Button className='buy-button' color='blue'>Buy now</Button>
                                 <Button onClick={() => addToCart(item)} className='add-button' color='brown'>Add to cart</Button>
                         </Button.Group>
                 </div>

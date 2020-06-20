@@ -24,12 +24,12 @@ const CartComponent = ({ items, removeFromCart, totalPrice }) => {
                                         </div>
 
                                         <div className='cart-list-item-button'>
-                                                <Button size='mini' fluid basic color='orange' onClick={() => removeFromCart(item.id)} color='orange'>Remove</Button>
+                                                <Button size='mini' fluid basic color='orange' onClick={() => removeFromCart(item.id)} color='brown'>Remove</Button>
                                         </div>
                                 </div>
                         )) : tip
                         }
-                        <Button onClick={() => alert('This function not ready yet')} fluid basic color='teal' content={`Total price: ${totalPrice}`} />
+                        <Button onClick={() => alert('This function not ready yet')} fluid basic color='blue' content={`Total price: ${totalPrice}`} />
                 </div>
         )
 

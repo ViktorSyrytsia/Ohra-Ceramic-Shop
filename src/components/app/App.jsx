@@ -5,6 +5,7 @@ import FilterPanel from '../../containers/FilterPanel';
 import LoadingIndicator from '../loadingIndicator/LoadingIndicator';
 import Workshop from '../../pages/workshop/Workshop';
 import AboutUs from '../../pages/aboutUs/AboutUs';
+import Footer from '../footer/Footer';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -12,6 +13,7 @@ import axios from 'axios';
 
 import { Container, Card } from 'semantic-ui-react';
 import './app.scss'
+
 
 
 
@@ -51,6 +53,7 @@ const App = ({ setItems, itemsList, isReady }) => {
                                         <AboutUs />
                                 </Route>
                         </Switch>
+                        <Footer />
 
                 </Container>
 

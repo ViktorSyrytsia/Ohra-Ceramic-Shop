@@ -9,14 +9,14 @@
     justify-content: space-between;
     align-items: center;
     &-image > img {
-      width: 50px;
+      width: 65px;
       height: auto;
       border-radius: 4px;
     }
 
     &-text {
       flex-grow: 1;
-      font-size: 12px;
+      font-size: 13px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -31,15 +31,16 @@
   display: block;
   font-weight: bold;
   margin-left: 5px;
-  width: 60px;
-  margin-right: 5px;
+  flex-basis: 100px;
+  margin-left: 20px;
 }
 
 .item-count {
   display: block;
-  margin-right: 5px;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 .item-price {
   display: block;
-  margin-right: 5px;
+  margin-right: 20px;
 }
